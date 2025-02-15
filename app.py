@@ -2,7 +2,6 @@
 import streamlit as st
 from openai import OpenAI
 import os
-import streamlit_authenticator as stauth
 
 # Get your OpenAI API key from environment variables 
 api_key = os.getenv("OPENAI_API_KEY")  # Used in production
