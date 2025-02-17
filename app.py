@@ -29,8 +29,8 @@ if st.session_state["authentication_status"]:
     st.write(f'Welcome {st.session_state["name"]}')
     st.title('Some content')
 
-    # Your existing OpenAI setup
-    api_key = 'your_openai_api_key'  # Replace with your actual OpenAI API key
+    # Get your OpenAI API key from environment variables 
+    api_key = os.getenv("OPENAI_API_KEY")  # Used in production
     client = OpenAI(api_key=api_key)
 
     # Cell 2: Title & Description
